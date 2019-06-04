@@ -1,0 +1,9 @@
+
+src/parents/kids/__pycache__/boy.cpython-37.pyc
+src/parents/kids/__pycache__/girl.cpython-37.pyc
+*.pyc
+*.gz
+*.txt
+LICENSE
+.DS_Store
+demojd.egg-info/PKG-INFO
