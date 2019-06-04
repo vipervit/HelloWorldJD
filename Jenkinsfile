@@ -5,6 +5,7 @@ pipeline {
     stages {
       stage('Deploy in cloud') {
         steps('Make and push docker image') {
+          sh 'docker rmi tesqos/demojd:latest'
           sh 'docker build -t tesqos/demojd:latest .'
           sh 'docker push tesqos/demojd:latest'
         }
