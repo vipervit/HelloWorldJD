@@ -7,5 +7,6 @@ setup(
     author_email='vitolg1@gmail.com',
     version='0.33',
     packages=find_packages(),
+    package_data={'': ['*.json']},
     scripts=['demojd/scripts/hello.py']
 )
