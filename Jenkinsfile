@@ -13,6 +13,7 @@ pipeline {
 
       stage('Deploy locally'){
         steps('Install in pip repository') {
+          sh 'rm -r -f dist'
           sh 'python setup.py sdist'
           sh 'pip install dist/*'
         }
