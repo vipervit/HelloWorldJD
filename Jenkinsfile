@@ -14,7 +14,7 @@ pipeline {
       stage('Deploy locally'){
         steps('Install in pip repository') {
           sh 'python setup.py sdist'
-          sh 'pip install dist/*'
+          sh 'pip install --upgrade dist/*'
         }
       }
 
