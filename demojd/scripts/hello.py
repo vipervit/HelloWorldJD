@@ -1,4 +1,4 @@
-from ..src import uncle
+from ..src import uncle, guests
 from ..src.parents import mom, dad
 from ..src.parents.kids import boy, girl
 
@@ -7,3 +7,4 @@ mom.hello()
 dad.hello()
 boy.hello()
 girl.hello()
+guests.hello()
