@@ -13,8 +13,10 @@ pipeline {
 
       stage('Deploy locally'){
         steps('Install in pip repository') {
+          sh 'pip uninstall demojd'
+          sh 'rm -r -f dist'
           sh 'python setup.py sdist'
-          sh 'pip install --upgrade dist/*'
+          sh 'pip install dist/*'
         }
       }
 
