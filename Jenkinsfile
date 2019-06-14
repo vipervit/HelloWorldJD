@@ -16,7 +16,7 @@ pipeline {
           sh 'echo y | pip uninstall demojd'
           sh 'rm -r -f dist'
           sh 'python setup.py sdist'
-#         sh 'pip install dist/*'
+//        sh 'pip install dist/*'
           sh 'python3 -m twine upload dist/* -u vipervit'
           sh 'pip install --upgrade demojd'
         }
