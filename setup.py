@@ -6,6 +6,8 @@ setup(
     author='vipervit',
     author_email='vitolg1@gmail.com',
     version='0.371',
+    long_description=open('README.rst').read(),
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     package_data={'': ['*.json']},
     scripts=['demojd/scripts/hello.py']
