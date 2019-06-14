@@ -29,6 +29,7 @@ pipeline {
         steps('upload package') {
           sh 'python3 -m twine upload dist/* -u vipervit'
         }
+      }
 
       stage('pip: Install new package version') {
         steps('install package') {
