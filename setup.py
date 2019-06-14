@@ -5,7 +5,7 @@ setup(
     description='Hello World demo with package structure.',
     author='vipervit',
     author_email='vitolg1@gmail.com',
-    version='0.35',
+    version='0.36',
     packages=find_packages(),
     package_data={'': ['*.json']},
     scripts=['demojd/scripts/hello.py']
