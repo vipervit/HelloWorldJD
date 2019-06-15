@@ -2,9 +2,24 @@
 layout: default
 ---
 <body>
-  <p>A simple hello-world project to demonstrate at the most basic level how to make a Jenkins pipeline and integrate it with Docker.&nbsp;</p>
-  <p>Docker image on Docker Hub:&nbsp;&nbsp;<a title="Docker image" href="https://hub.docker.com/r/tesqos/demojd" target="_blank" rel="noopener">https://hub.docker.com/r/tesqos/demojd</a></p>
-  <p>To install the image: <em>"docker pull tesqos/demojd"</em></p>
-  <h1><span style="color: #ff0000;">UNDER CONSTRUCTION</span></h1>
+  <h1><span style="color: #ff0000;">FULL DESCRIPTION IS UNDER CONSTRUCTION</span></h1>
+  <p>&nbsp;</p>
+  <h4>A simple hello-world project to demonstrate at the most basic level how to make a Jenkins pipeline and integrate it with Docker and PyPI for continous delivery.&nbsp;</h4>
+  <p>&nbsp;</p>
+  <p>Note that in case of this project there is no continuous <em>demployment&nbsp;</em>as the end user will have to install the latest version of the "product" (i.e. either a Docker image or a Python package or both) manually.</p>
+  <p>Here is a good read for understanding the difference between the terms (googling "continous delivery vs.." will also help):&nbsp;<a title="Continuous integration vs. continuous delivery vs. continuous deployment" href="https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment" target="_blank" rel="noopener">Atlassian CI/CD</a></p>
+  <p>&nbsp;</p>
+  <hr />
+  <h3>Docker image</h3>
+  <p>Docker image of the demo is available from Docker Hub:&nbsp;&nbsp;<a title="Docker image" href="https://hub.docker.com/r/tesqos/demojd" target="_blank" rel="noopener">https://hub.docker.com/r/tesqos/demojd</a></p>
+  <p style="text-align: justify;">To install the image: <em>"docker pull tesqos/demojd"</em></p>
+  <p style="text-align: justify;">To run it upon the installation: <em>"docker run tesqos/demojd"</em></p>
+  <p style="text-align: justify;">To check it in the local Docker repository: <em>"docker image ls"</em></p>
+  <hr />
+  <h3>Python package</h3>
+  <p>The same product in the form of a Python package can be downloaded and install on the local machine from the <a title="PyPI" href="https://pypi.org/" target="_blank" rel="noopener">PyPI</a> index using the following command:</p>
+  <p><em>"pip install demojd"</em></p>
+  <p>To run the code: <em>"python -m demojd.scripts.hello"</em></p>
+  <p>&nbsp;</p>
   <h1>&nbsp;</h1>
 </body>
