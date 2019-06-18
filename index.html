@@ -2,7 +2,7 @@
 layout: default
 ---
 <body>
-  <h1><span style="color: #ff0000;">FULL DESCRIPTION IS UNDER CONSTRUCTION</span></h1>
+  <h1><span style="color: #ff0000;">PAGE IS UNDER CONSTRUCTION</span></h1>
   <p>&nbsp;</p>
   <h4>A simple hello-world project to demonstrate at the most basic level how to make a Jenkins pipeline and integrate it with Docker and PyPI for continous delivery.&nbsp;</h4>
   <p>&nbsp;</p>
@@ -12,14 +12,31 @@ layout: default
   <hr />
   <h3>Docker image</h3>
   <p>Docker image of the demo is available from Docker Hub:&nbsp;&nbsp;<a title="Docker image" href="https://hub.docker.com/r/tesqos/demojd" target="_blank" rel="noopener">https://hub.docker.com/r/tesqos/demojd</a></p>
-  <p style="text-align: justify;">To install the image: <em>"docker pull tesqos/demojd"</em></p>
-  <p style="text-align: justify;">To run it upon the installation: <em>"docker run tesqos/demojd"</em></p>
-  <p style="text-align: justify;">To check it in the local Docker repository: <em>"docker image ls"</em></p>
+  <p style="text-align: justify;">To install the image: <em>docker pull tesqos/demojd</em></p>
+  <p style="text-align: justify;">To run it upon the installation: <em>docker run tesqow/demojd</em></p>
+  <p style="text-align: justify;">To check it in the local Docker repository: <em>docker image ls</em></p>
   <hr />
   <h3>Python package</h3>
   <p>The same product in the form of a Python package can be downloaded and install on the local machine from the <a title="PyPI" href="https://pypi.org/" target="_blank" rel="noopener">PyPI</a> index using the following command:</p>
-  <p><em>"pip install demojd"</em></p>
-  <p>To run the code: <em>"python -m demojd.scripts.hello"</em></p>
+  <p><em>pip install demojd</em></p>
+  <p>To run the code: <em>python -m demojd.scripts.hello</em></p>
   <p>&nbsp;</p>
-  <h1>&nbsp;</h1>
+  <p>The result of the execution produces output from different modules in the package tree and looks as follows:</p>
+  <p class="p1"><em><span class="s1">Hi from uncle!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from mom!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from dad!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from son!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from daughter!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from cousin!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from niece!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from nephew!</span></em></p>
+  <p class="p1"><em><span class="s1">Hi from grandma!</span></em></p>
+  <p>&nbsp;</p>
+  <h3>Software Modification Process</h3>
+  <p>Let's demonstrate modification of the project's code by introducing changes to a data file called <em>otherslist.json.</em></p>
+  <p>In order to do that, anyone having a GitHub account can propose changes to the file by editing it (in their forked branch) and create a pull request.&nbsp;</p>
+  <p>Once the maintainer of the project incorporates the change in a new version (thus making the user proposing the changes a <em>contributor</em>&nbsp;to the project), the change becomes part of the new code.</p>
+  <p>Pushing the changes to the Github repository will generate a new build and ultimately new versions of the executables.</p>
+  <p>For example, if we modify the <em>otherlist.json</em>&nbsp;file by adding a new line <em>'grandpa'</em>, the software output will grow by a new line <em>'Hi from grandpa!'</em>&nbsp;because a function reads the data file and sends a formatted output to stdout using all the lines of the file.&nbsp;&nbsp;</p>
+  <p>&nbsp;&nbsp;</p>
 </body>
