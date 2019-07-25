@@ -1,9 +1,5 @@
 import logging
+logger = logging.getLogger(__name__)
 
-logger = logging.getLogger(__path__[0])
-logger.setLevel(logging.DEBUG)
-console = logging.StreamHandler()
-console.setLevel(logging.INFO)
-logger.addHandler(console)
-
-mydir = __path__[0]
+from .. import hello as hello
+from .. import data_fpath as data_fpath

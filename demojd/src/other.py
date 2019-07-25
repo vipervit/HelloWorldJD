@@ -1,8 +1,12 @@
-from . import logger, mydir
 import json
+import os
+
+from . import logger, data_fpath
+from . import hello as hello_main
 
 def hello():
-    with open(mydir + '/otherlist.json', 'r') as f:
+    with open(data_fpath, 'r') as f:
         guest_list = json.load(f)
     for each in guest_list["others"]:
-        logger.info('Hi from ' + each + '!')
+        hello_main('Hi from ' + each + '!')
+    logger.debug('Hi from ' + __name__ + '(debug message)')
