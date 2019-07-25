@@ -1,5 +1,5 @@
 import logging
 logger = logging.getLogger(__name__)
 
-def hello():
-    logger.info('Hi from dad!')
+def hello(msg):
+    logger.info(msg)

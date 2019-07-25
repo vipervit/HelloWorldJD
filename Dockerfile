@@ -3,4 +3,4 @@ WORKDIR /app
 ADD . /app
 RUN python setup.py sdist
 RUN pip install dist/*
-ENTRYPOINT ["python", "-m", "demojd.scripts.hello"]
+ENTRYPOINT ["python", "-m", "demojd"]

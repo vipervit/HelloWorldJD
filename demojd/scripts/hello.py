@@ -1,11 +1,14 @@
 from ..src import uncle, other
 from ..src.parents import mom, dad
 from ..src.parents.kids import boy, girl
-from . import logger
 
-mom.hello()
-dad.hello()
-boy.hello()
-girl.hello()
-other.hello()
-uncle.hello()
+import logging
+logger = logging.getLogger(__name__)
+
+def hello():
+    mom.hello()
+    dad.hello()
+    boy.hello()
+    girl.hello()
+    other.hello()
+    uncle.hello()
