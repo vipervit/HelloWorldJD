@@ -2,8 +2,12 @@ import sys
 import getopt
 import logging
 
+# NOTE: if use the standard technique 'logging.getLogger(__name__)', the logger will not work properly
+# and the debug message will not be printed.
+# This happens because __name__ == __main__
+from . import logger
+
 from .scripts.hello import hello
-from . import logger, console, debug
 
 try:
     opts, args = getopt.getopt(sys.argv[1:], '-d', [])
@@ -14,15 +18,6 @@ except getopt.GetoptError as err:
 
 for opt, args in opts:
     if opt == '-d':
-        debug = True
-
-if debug:
-    mode = logging.DEBUG
-else:
-    mode = logging.INFO
-
-logger.setLevel(mode)
-console.setLevel(mode)
-logger.addHandler(console)
+        logger.setLevel(logging.DEBUG)
 
 hello()
