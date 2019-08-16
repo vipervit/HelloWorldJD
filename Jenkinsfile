@@ -31,8 +31,9 @@ pipeline {
         }
       }
 
-      stage('pip: Install new package version') {
+      stage('pip: Install new package version in PROD') {
         steps('install package') {
+          sh 'pprod'
           sh 'pip install --upgrade demojd'
         }
       }
