@@ -1,9 +1,6 @@
-from ..src import uncle, other
-from ..src.parents import mom, dad
-from ..src.parents.kids import boy, girl
-
-import logging
-logger = logging.getLogger(__name__)
+from demojd.src import uncle, other
+from demojd.src.parents import mom, dad
+from demojd.src.parents.kids import boy, girl
 
 def hello():
     mom.hello()
