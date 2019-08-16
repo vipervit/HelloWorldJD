@@ -33,7 +33,7 @@ pipeline {
 
       stage('pip: Install new package version in PROD') {
         steps('install package') {
-          sh 'pprod'
+          sh 'source $PROG/python/prod/bin/activate'
           sh 'pip install --upgrade demojd'
         }
       }
