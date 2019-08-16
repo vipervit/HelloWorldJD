@@ -5,7 +5,7 @@ setup(
     description='Hello World demo with tree package structure.',
     author='vipervit',
     author_email='vitolg1@gmail.com',
-    version='0.44.3',
+    version='0.44.4',
     long_description=open('README.rst').read(),
     long_description_content_type='text/markdown',
     packages=find_packages(),
